@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pizza Booking Website</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        h1 {
+            text-align: center;
+        }
+        .pizza-choice {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .topping-choice {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .topping-choice label {
+            margin: 5px;
+        }
+        .total-price {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .payment-details {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .payment-details label {
+            margin-bottom: 5px;
+        }
+        .submit-button {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pizza Booking Website</h1>
+    <div class="pizza-choice">
+        <h2>Choose Your Pizza:</h2>
+        <select id="pizza-select">
+            <option value="margherita">Margherita</option>
+            <option value="pepperoni">Pepperoni</option>
+            <option value="vegetarian">Vegetarian</option>
+        </select>
+    </div>
+    <div class="topping-choice">
+        <h2>Choose Your Toppings:</h2>
+        <label><input type="checkbox" name="topping" value="tomato">Tomato</label>
+        <label><input type="checkbox" name="topping" value="cheese">Cheese</label>
+        <label><input type="checkbox" name="topping" value="mushroom">Mushroom</label>
+        <label><input type="checkbox" name="topping" value="onion">Onion</label>
